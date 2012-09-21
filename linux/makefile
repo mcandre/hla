@@ -71,4 +71,6 @@ clean:
 	rm -f *.link
 	rm -f *.inc
 	rm -f lex.yy.c
-	
+	rm -f hla
+	rm -f hlaparse
+
