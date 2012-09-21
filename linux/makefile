@@ -9,10 +9,12 @@ CC=gcc
 AS=as
 CFLAGS=-O2 -m32 -static -static-libgcc -Dlinux_c
 
-release:  hlaparse hla
+all: hlaparse hla
+	echo 'Compiled Successfully'
+
+install:  hlaparse hla
 	cp hlaparse $(USERBIN)/hlaparse
 	cp hla $(USERBIN)/hla
-
 
 hla: hla.o 
 	$(CC) $(CFLAGS) -o hla hla.o
