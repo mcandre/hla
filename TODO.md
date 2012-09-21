@@ -1,4 +1,3 @@
-* Provide proper licensing
 * Flesh out README
 * Standardize build process with makefiles
 * Provide installer-generating scripts
