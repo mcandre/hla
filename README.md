@@ -1,4 +1,4 @@
-# hla - a portable, multiplatform assembly language
+# HLA - a portable, multiplatform assembly language
 
 # RESOURCES
 
