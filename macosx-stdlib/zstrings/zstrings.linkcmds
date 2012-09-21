@@ -1,0 +1,6 @@
+zstr_cat.o
+zstr_cmp.o
+zstr_cpy.o
+zstr_cpyn.o
+zstr_cpySize.o
+zstr_len.o
