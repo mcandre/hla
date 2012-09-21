@@ -1,0 +1,4 @@
+cor_call.o
+cor_create.o
+cor_free.o
+cor_ret.o
