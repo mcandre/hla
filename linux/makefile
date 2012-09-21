@@ -59,11 +59,11 @@ coerce.o: coerce.c symbol.h common.h ratc.h debug.h enums.h
 funcs.o: funcs.c symbol.h common.h ratc.h debug.h enums.h
 	$(CC) $(CFLAGS) -c -o funcs.o funcs.c
 	
-hlaasm.o:hlaasm.gas
+hlaasm.o: hlaasm.gas
 	$(AS) --32 -o hlaasm.o hlaasm.gas	
 
 
-hlabe.linux.o:hlabe.linux.gas
+hlabe.linux.o: hlabe.linux.gas
 	$(AS) --32 -o hlabe.linux.o hlabe.linux.gas
 
 clean:

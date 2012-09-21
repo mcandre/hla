@@ -1,0 +1,10 @@
+program SampleHLApgm;
+#include( "stdlib.hhf" )
+
+const
+    HelloWorld := "Hello World";
+
+begin SampleHLApgm;
+    stdout.put( "The classical 'Hello World' program: ", HelloWorld, nl );
+
+end SampleHLApgm;
