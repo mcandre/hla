@@ -7,6 +7,9 @@ all:  hlalib.a
 	chmod +x hlalib.a
 #	hlalib_safe.a
 
+install: hlalib.a
+	cp hlalib.a /usr/local/lib/hlalib.a
+
 hlalib.a: args/args.a arrays/arrays.a bits/bits.a blobs/blobs.a  \
 	chars/chars.a conv/conv.a cset/cset.a data/data.a  \
 	datetime/datetime.a fileclass/fileclass.a fileio/fileio.a filesys/filesys.a  \
