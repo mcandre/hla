@@ -1,40 +1,31 @@
-/usr/hla/hlalibsrc/trunk/tables.a: \
+tables.a: \
 	tables.o \
 
-	ar rc /usr/hla/hlalibsrc/trunk/hlalib.a \
+	ar rc ../hlalib.a \
 		tables.o \
 
-	ar s /usr/hla/hlalibsrc/trunk/hlalib.a
+	ar s ../hlalib.a
 
 tables.o: tables.hla \
-	/usr/hla/include/zstrings.hhf \
-	/usr/hla/include/stdio.hhf \
-	/usr/hla/include/cstdlib.hhf \
-	/usr/hla/include/tables.hhf \
-	/usr/hla/include/excepts.hhf \
-	/usr/hla/include/buf.hhf \
-	/usr/hla/include/overload.hhf \
-	/usr/hla/include/memory.hhf \
-	/usr/hla/include/strings.hhf \
-	/usr/hla/include/hla.hhf \
-	/usr/hla/include/_hla.hhf \
-	/usr/hla/include/os.hhf \
+	../hlainc/zstrings.hhf \
+	../hlainc/stdio.hhf \
+	../hlainc/cstdlib.hhf \
+	../hlainc/tables.hhf \
+	../hlainc/excepts.hhf \
+	../hlainc/buf.hhf \
+	../hlainc/overload.hhf \
+	../hlainc/memory.hhf \
+	../hlainc/strings.hhf \
+	../hlainc/hla.hhf \
+	../hlainc/_hla.hhf \
+	../hlainc/os.hhf \
 
 	hla -c -p:temp  tables
 
 
 
-
 clean:
-	delete temp
-	delete .inc
-	delete .o
-	delete .obj
-	delete .link
-	delete .exe
-	delete .asm
-	delete .pdb
-	delete .ilk
-	delete .a
-	delete .lib
-
+	rm -f *.o
+	rm -f *.a
+	rm -f *.lib
+	
